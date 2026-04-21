@@ -1,0 +1,24 @@
+apply plugin: "java-library"
+apply plugin: "application"
+
+sourceSets.main.resources.srcDirs = ["../assets"]
+
+dependencies {
+    implementation project(":core")
+    api "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+}
+
+mainClassName = "com.zingbah.racing.desktop.DesktopLauncher"
+
+jar {
+    archiveFileName.set("ZingZingRacing.jar")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
