@@ -1,1 +1,2 @@
-### Click on each game file in order to see how to run it.
+### Clone the repo into inteliJ. When done, for BlackJack run Blackjack in src, For Boobah racing run Game
+
