@@ -25,6 +25,7 @@ A top-down Boohbah racing game built with Java Swing.
 **Download the file**  
 **Open it in an IDE**
 **Locate game.java, right click it and press run**  
+  
 **OR in the terminal**  
 ```bash
 javac *.java
