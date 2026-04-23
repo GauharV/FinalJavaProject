@@ -100,5 +100,5 @@ All logic, UI rendering, and game state management are contained in a single fil
 👤 Author
 ---------
 
-**Gauhar Veeravalli**\
+**Gauhar Veeravalli & Samuel Taiwo**\
 Java II Project
